@@ -11,3 +11,94 @@ h1 {
   margin-bottom: 10px;
   text-align: center;
 }
+
+ul {
+  list-style: none;
+}
+
+form {
+  padding-left: 30px;
+}
+
+a {
+  color: #fff;
+  font-size: 10px;
+  margin-left: 255px;
+}
+
+.container {
+  max-width: 1000px;
+  margin-top: 50px;
+}
+
+.weather-details-title {
+  color: #ffe168;
+  font-weight: bold;
+}
+
+.weather-details-left {
+  font-size: smaller;
+  left: 25px;
+  position: relative;
+  padding-top: 30px;
+}
+
+.weather-details-right {
+  font-size: smaller;
+  left: 55px;
+  position: relative;
+  padding-top: 30px;
+}
+
+.weather-forecast {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.weather-forecast-icon {
+  display: block;
+  font-size: 30px;
+}
+
+.weather-forecast-day,
+.weather-forecast-temperature {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.current-status {
+  font-size: 15px;
+}
+
+#location-button {
+  border-radius: 5px;
+  margin-left: -110px;
+}
+
+hover.location-button {
+  cursor: pointer;
+}
+
+#search-button {
+  border-radius: 5px;
+}
+
+hover.search-button {
+  cursor: pointer;
+}
+
+#celsius-link {
+  font-weight: lighter;
+  font-size: 22px;
+  margin-left: 420px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#fahrenheit-link {
+  font-weight: lighter;
+  font-size: 22px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  text-align: center;
+}
