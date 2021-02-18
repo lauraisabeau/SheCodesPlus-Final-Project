@@ -17,8 +17,8 @@
     <div class="card bg-transparent border-light">
         <div class="card-body">
             <h1 id="city">Frankfurt am Main</h1>
-            <h2 class="units">
-               <a href="#" id="celsius-link" class="active">°C</a> | <a href="#" id="fahrenheit-link">°F</a></h2>
+            <h2 id="temp">10</h2>
+            <span class="units"><a href="#" id="celsius-link" class="active">°C</a><strong> | </strong><a href="#" id="fahrenheit-link">°F</a></span>
             <ul class="current-status">
             <li id="current-date"> Monday, 15.02.2021</li>
             <li id="current-time">21:00</li>
@@ -26,7 +26,7 @@
             <form class="row">
                 <div class="col-md-6">
                     <input type="text" placeholder="Enter the name of your city..." autocomplete="off"
-                    class="form-control shadow-sm">
+                    class="form-control shadow-sm" id="search-form">
                 </div>
                 <div class="col-3">
                     <button type="submit" class="btn btn-dark shadow-sm" id="search-button"> 
@@ -124,6 +124,6 @@
     </div>
     </div>
     <a href="https://github.com/lauraisabeau/SheCodesPlus-Final-Project" target="_blank">Click here for open source code (by Laura Isabeau)</a>
-    <script src="sources/index.js"></script>
+    <script src="src/project.js"></script>
 </body>
 </html>

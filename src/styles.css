@@ -89,16 +89,29 @@ hover.search-button {
 
 #celsius-link {
   font-weight: lighter;
-  font-size: 22px;
-  margin-left: 420px;
-  margin-bottom: 10px;
+  font-size: 18px;
+  margin-left: 435px;
   text-align: center;
 }
 
 #fahrenheit-link {
   font-weight: lighter;
-  font-size: 22px;
+  font-size: 18px;
   margin: 0 auto;
-  margin-bottom: 10px;
   text-align: center;
+}
+
+#temp {
+  color: #ffe168;
+  font-weight: lighter;
+  font-size: 30px;
+  text-align: center;
+}
+
+#current-date {
+  font-size: 13px;
+}
+
+#current-time {
+  font-size: 13x;
 }
