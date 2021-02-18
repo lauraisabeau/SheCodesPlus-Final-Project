@@ -23,10 +23,11 @@
             <li id="current-date"> Monday, 15.02.2021</li>
             <li id="current-time">21:00</li>
             </ul>
-            <form class="row">
+            <form id="search-form">
+                <div class="row">
                 <div class="col-md-6">
                     <input type="text" placeholder="Enter the name of your city..." autocomplete="off"
-                    class="form-control shadow-sm" id="search-form">
+                    class="form-control shadow-sm" id="city-input">
                 </div>
                 <div class="col-3">
                     <button type="submit" class="btn btn-dark shadow-sm" id="search-button"> 
@@ -38,21 +39,22 @@
                         LOCATION
                     </button>
                     </div>
+                    </div>
             </form>
             <div class="weather-info">
                 <div class="row">
                     <div class="row row-cols-2.5">
                         <div>
                             <ul class="weather-details-left">
-                            <li class="weather-details-title" id="sunrise">Sunrise</li> <p class="sunriseTime">6:00 am</p>
-                            <li class="weather-details-title" id="wind">Wind</li> <p class="windSpeed">10 km/h</p>
+                            <li class="weather-details-title">Sunrise</li> <p id="sunrise">6:00 am</p>
+                            <li class="weather-details-title">Wind</li> <p id="wind">10 km/h</p>
                         </ul>
                         </div>
                        
                         <div>
                             <ul class="weather-details-right">
-                                <li class="weather-details-title" id="sunset">Sunset</li> <p class="sunsetTime">7:00 pm</p>
-                                <li class="weather-details-title" id="humidity">Humidity</li> <p class="currentHumidity">80 %</p>
+                                <li class="weather-details-title">Sunset</li> <p id="sunset">7:00 pm</p>
+                                <li class="weather-details-title"></li>Humidity</li> <p id="humidity">80 %</p>
                             </ul>
                             </div>
                         

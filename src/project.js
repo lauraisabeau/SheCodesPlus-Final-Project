@@ -40,10 +40,29 @@ currentDateElement.innerHTML = `${day}, ${currentDate}. ${month} ${year}`;
 currentTimeElement.innerHTML = `${hours}:${minutes}`;
 
 /// topic: search engine and button
+function displayWeather(response) {
+  document.querySelector("#city").innerHTML = response.data.name;
+  document.querySelector("#temp").innerHTML = Math.round(
+    response.data.main.temp
+  );
+
+  document.querySelector("#humidity").innerHTML = response.data.main.humidity;
+  document.querySelector("#wind").innerHTML = Math.round(response.data.wind.speed);
+  document.querySelector("#sunrise").innerHTML = response.data.sys.sunrise;
+  document.querySelector("#sunset").innerHTML = response.data.sys.sunset;
+}
 
 
+function searchCity(event) {
+  event.preventDefault();
+  let apiKey = "a095f37b87fedfd0dd2e2a626d41cf7d";
+  let city = document.querySelector("#city-input").value;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayWeather);
+}
 
-
+let searchForm = document.querySelector("#search-form");
+searchForm.addEventListener("submit", searchCity);
 /// topic: current location button 
 
 function showTempHere(response) {
