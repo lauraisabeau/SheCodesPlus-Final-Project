@@ -63,14 +63,18 @@ function searchCity(event) {
 
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", searchCity);
+
 /// topic: current location button 
 
 function showTempHere(response) {
   console.log(response);
   let temperature = Math.round(response.data.main.temp);
-  let location = response.data.name;
   let h2 = document.querySelector("h2");
   h2.innerHTML = `${temperature}`;
+  document.querySelector("#city").innerHTML = response.data.name;   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
+  document.querySelector("#wind").innerHTML = Math.round(response.data.wind.speed);
+  document.querySelector("#sunrise").innerHTML = response.data.sys.sunrise;
+  document.querySelector("#sunset").innerHTML = response.data.sys.sunset;
 }
 
 function showPosition(position) {
