@@ -50,8 +50,6 @@ function displayWeather(response) {
 
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = Math.round(response.data.wind.speed);
-  document.querySelector("#sunrise").innerHTML = response.data.sys.sunrise;
-  document.querySelector("#sunset").innerHTML = response.data.sys.sunset;
 }
 
 
@@ -76,8 +74,6 @@ function showTempHere(response) {
   h2.innerHTML = `${temperature}`;
   document.querySelector("#city").innerHTML = response.data.name;   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = Math.round(response.data.wind.speed);
-  document.querySelector("#sunrise").innerHTML = response.data.sys.sunrise;
-    document.querySelector("#sunset").innerHTML = response.data.sys.sunset;
     celsiusTemperature = response.data.main.temp;
 }
 

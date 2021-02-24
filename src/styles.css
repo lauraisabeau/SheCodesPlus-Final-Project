@@ -1,9 +1,11 @@
 html,
 body {
-  font-family: "Nunito Sans", sans-serif;
-  height: 100%;
   background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: #e8ffff;
+  font-family: "Nunito Sans", sans-serif;
+  height: 100%;
+  position: fixed;
+  overflow: auto;
 }
 
 h1 {
@@ -29,6 +31,7 @@ a {
 .container {
   max-width: 1000px;
   margin-top: 50px;
+  position: fixed;
 }
 
 .weather-details-title {
