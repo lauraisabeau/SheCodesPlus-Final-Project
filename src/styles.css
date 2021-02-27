@@ -23,7 +23,8 @@ form {
 a {
   color: #fff;
   font-size: 10px;
-  margin-left: 285px;
+  margin-left: 255px;
+  margin: 0 auto;
 }
 
 .container {
