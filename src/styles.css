@@ -23,12 +23,16 @@ form {
 a {
   color: #fff;
   font-size: 10px;
-  margin-left: 255px;
+  margin-left: 235px;
+  position: fixed;
+  overflow: auto;
 }
 
 .container {
   max-width: 1000px;
   margin-top: 50px;
+  position: fixed;
+  overflow: auto;
 }
 
 .weather-details-title {
