@@ -29,6 +29,8 @@ a {
 .container {
   max-width: 1000px;
   margin-top: 50px;
+  position: fixed;
+  overflow: auto;
 }
 
 .weather-details-title {
