@@ -4,6 +4,7 @@ body {
   color: #e8ffff;
   font-family: "Nunito Sans", sans-serif;
   height: 100%;
+  position: fixed;
 }
 
 h1 {
@@ -29,7 +30,6 @@ a {
 .container {
   max-width: 1000px;
   margin-top: 50px;
-  position: fixed;
 }
 
 .weather-details-title {
